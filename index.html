@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fertilizer Recommender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Smart Agro Fertilizer Recommender</h2>
+        <form id="soilForm">
+            <label>pH Level:</label>
+            <input type="number" step="0.1" id="ph" required>
+            
+            <label>Nitrogen (N):</label>
+            <input type="number" id="nitrogen" required>
+            
+            <label>Phosphorus (P):</label>
+            <input type="number" id="phosphorus" required>
+            
+            <label>Potassium (K):</label>
+            <input type="number" id="potassium" required>
+            
+            <label>Moisture (%):</label>
+            <input type="number" id="moisture" required>
+            
+            <button type="submit">Get Recommendation</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
